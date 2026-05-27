@@ -1,0 +1,37 @@
+<!-- CALCULATOR PAGE -->
+  <section id="calculator">
+    <div class="container">
+      <h2>Carbon Footprint Calculator</h2>
+
+      <label>Transportation</label>
+      <select id="transport">
+        <option value="1">Walk / Bike</option>
+        <option value="2">Public Transport</option>
+        <option value="3">Car / Motorcycle</option>
+      </select>
+
+      <label>Electricity Usage</label>
+      <select id="electricity">
+        <option value="1">Low</option>
+        <option value="2">Moderate</option>
+        <option value="3">High</option>
+      </select>
+
+      <label>Diet</label>
+      <select id="diet">
+        <option value="1">Plant-based</option>
+        <option value="2">Mixed Diet</option>
+        <option value="3">Meat-heavy</option>
+      </select>
+
+      <button onclick="calculateFootprint()">Calculate</button>
+
+      <div id="result"></div>
+
+      <!-- FEATURE 1 -->
+      <div class="tips" id="recommendationBox" style="display:none;">
+        <h2>Eco Tips</h2>
+        <p id="tipsText"></p>
+      </div>
+    </div>
+  </section>
