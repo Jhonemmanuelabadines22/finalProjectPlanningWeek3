@@ -1,37 +1,72 @@
-<!-- CALCULATOR PAGE -->
-  <section id="calculator">
-    <div class="container">
-      <h2>Carbon Footprint Calculator</h2>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landingPageStyle.css" />
+    <title>CarbonCheck - Carbon Footprint Calculator</title>
 
-      <label>Transportation</label>
-      <select id="transport">
-        <option value="1">Walk / Bike</option>
-        <option value="2">Public Transport</option>
-        <option value="3">Car / Motorcycle</option>
-      </select>
+  </head>
+  <body>
 
-      <label>Electricity Usage</label>
-      <select id="electricity">
-        <option value="1">Low</option>
-        <option value="2">Moderate</option>
-        <option value="3">High</option>
-      </select>
+    <nav>
+      <a href="landingPage.html">Home</a>
+      <a href="calculatorPage.html">Calculator</a>
+    </nav>
 
-      <label>Diet</label>
-      <select id="diet">
-        <option value="1">Plant-based</option>
-        <option value="2">Mixed Diet</option>
-        <option value="3">Meat-heavy</option>
-      </select>
+        <!-- CALCULATOR PAGE -->
+    <section id="calculator">
+      <div class="container">
+        <h2>Carbon Footprint Calculator</h2>
 
-      <button onclick="calculateFootprint()">Calculate</button>
+        <label>Transportation</label>
+        <select id="transport">
+          <option value="1">Walk / Bike</option>
+          <option value="2">Public Transport</option>
+          <option value="3">Car / Motorcycle</option>
+        </select>
 
-      <div id="result"></div>
+        <label>Electricity Usage</label>
+        <select id="electricity">
+          <option value="1">Low</option>
+          <option value="2">Moderate</option>
+          <option value="3">High</option>
+        </select>
 
-      <!-- FEATURE 1 -->
-      <div class="tips" id="recommendationBox" style="display:none;">
-        <h2>Eco Tips</h2>
-        <p id="tipsText"></p>
+        <label>Diet</label>
+        <select id="diet">
+          <option value="1">Plant-based</option>
+          <option value="2">Mixed Diet</option>
+          <option value="3">Meat-heavy</option>
+        </select>
+
+        <button onclick="calculateFootprint()">Calculate</button>
+
+        <div id="result"></div>
+        <div class="tips">
+
+        <h1 id="head1"></h1>
+        <p id="tip1"></p>
+        <p id="tip2"></p>
+        <p id="tip3"></p>
+
+        <h1 id="head2"></h1>
+        <p id="elec1"></p>
+        <p id="elec2"></p>
+        <p id="elec3"></p>
+
+        <h1 id="head3"></h1>
+        <p id="diet1"></p>
+        <p id="diet2"></p>
+        <p id="diet3"></p>
+        
+
+        <p id="saved"></p>
+
       </div>
-    </div>
-  </section>
+        
+
+        <script src="function.js"></script>
+  </body>
+  </html>
+

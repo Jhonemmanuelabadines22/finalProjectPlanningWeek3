@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoTrack - Carbon Footprint Calculator</title>
-  
+  <link rel="stylesheet" href="landingPageStyle.css" />
+ 
+  <title>CarbonCheck - Carbon Footprint Calculator</title>
+
 </head>
 <body>
 
@@ -16,11 +18,82 @@
   </nav>
 
   <!-- HOME PAGE -->
-  <section id="home">
+  <section class="imgbg" id="home">
+    <h1 class="title">CarbonCheck</h1>
+    <p class="tagline">Track your carbon footprint. Reduce your impact. Save the planet 🌱</p>
+    <a href="calculatorPage.html"><button class="btnTrack">Track Now</button></a>
+  </section> 
+
+  <!-- Learn PAGE -->
+
+  <section id="">
     <div class="container">
-      <h1> EcoTrack</h1>
+      <h2>What is a Carbon Footprint?</h2>
+
+      <iframe width="760" height="415"
+      src="https://www.youtube.com/embed/8q7_aV8eLUE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+      </iframe>
+
+      <div class="citation">
+      <p><strong>Source:</strong> YouTube/simpleshow</p>
       <p>
-        EcoTrack is a Carbon Footprint Calculator designed to help users understand
+        Video Link:  
+        <a href="https://youtu.be/8q7_aV8eLUE" target="_blank">
+          https://youtu.be/8q7_aV8eLUE
+        </a>
+      </p>
+
+      <p>
+        <em>Reminder:</em> This video is used for educational purposes. Credit belongs to the original creator.
+      </p>
+    </div>
+      
+    </div>
+  </section>
+  
+
+  <!-- FEATURES PAGE -->
+  <section id="features">
+    <div class="container">
+      <h2>Website Features</h2>
+
+      <!-- FEATURE 2 -->
+      <div class="feature-box">
+        <h3>📊 Carbon Score System</h3>
+        <p>
+          Users receive a carbon footprint level: Low, Moderate, or High.
+        </p>
+      </div>
+
+      <!-- FEATURE 3 -->
+      <div class="feature-box">
+        <h3>💡 Personalized Eco Tips</h3>
+        <p>
+          The website gives suggestions on how users can reduce their emissions.
+        </p>
+      </div>
+
+      <!-- FEATURE 4 -->
+      <div class="feature-box">
+        <h3>📺 Learn About Carbon Footprint </h3>
+        <p>
+          Watch a simple explainer video to understand CO₂ emissions and their impact on the planet.
+        </p>
+        <!--<button onclick="showSavedResult()">Show Saved Result</button>
+        <p id="savedResult"></p>-->
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h1>🌍 CarbonCheck</h1>
+      <p>
+        CarbonCheck is a Carbon Footprint Calculator designed to help users understand
         how their daily activities affect the environment.
       </p>
 
@@ -40,63 +113,11 @@
   </section>
 
   
-  <!-- FEATURES PAGE -->
-  <section id="features">
-    <div class="container">
-      <h2>Website Features</h2>
-
-      <!-- FEATURE 2 -->
-      <div class="feature-box">
-        <h3> Carbon Score System</h3>
-        <p>
-          Users receive a carbon footprint level: Low, Moderate, or High.
-        </p>
-      </div>
-
-      <!-- FEATURE 3 -->
-      <div class="feature-box">
-        <h3> Personalized Eco Tips</h3>
-        <p>
-          The website gives suggestions on how users can reduce their emissions.
-        </p>
-      </div>
-
-      <!-- FEATURE 4 -->
-      <div class="feature-box">
-        <h3> Save Last Result</h3>
-        <p>
-          The website automatically saves the user's last carbon footprint result using local storage.
-        </p>
-        <button onclick="showSavedResult()">Show Saved Result</button>
-        <p id="savedResult"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT PAGE -->
-  <section id="about">
-    <div class="container">
-      <h2>About the Project</h2>
-
-      <p>
-        EcoTrack was developed as a student project using HTML, CSS, and JavaScript.
-      </p>
-
-      <p>
-        The goal of this project is to raise awareness about environmental sustainability
-        and help users understand the impact of their lifestyle choices.
-      </p>
-
-      <p>
-        SDG Focus: <strong>SDG 13 - Climate Action</strong>
-      </p>
-    </div>
-  </section>
-
   <footer>
-    <p>EcoTrack © 2026 | Climate Action Awareness Website</p>
+    <p>CarbonCheck © 2026 | TEAMBA</p>
   </footer>
 
   
+     <script src="function.js"></script>
 </body>
 </html>
