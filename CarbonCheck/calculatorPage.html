@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="landingPageStyle.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>CarbonCheck - Carbon Footprint Calculator</title>
 
   </head>
@@ -16,7 +17,7 @@
 
         <!-- CALCULATOR PAGE -->
     <section id="calculator">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <h2>Carbon Footprint Calculator</h2>
 
         <label>Transportation</label>
@@ -43,7 +44,7 @@
         <button onclick="calculateFootprint()">Calculate</button>
 
         <div id="result"></div>
-        <div class="tips">
+        <div class="tips" id="tipsSection" data-aos="flip-up">
 
         <h1 id="head1"></h1>
         <p id="tip1"></p>
@@ -67,6 +68,10 @@
         
 
         <script src="function.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
   </html>
 

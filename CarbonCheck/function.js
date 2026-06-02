@@ -1,3 +1,4 @@
+// Function to calculate carbon footprint and display results
 function calculateFootprint() {
 
   let transport = parseInt(document.getElementById("transport").value);
@@ -77,4 +78,41 @@ function calculateFootprint() {
   document.getElementById("diet1").innerHTML = diet1;
   document.getElementById("diet2").innerHTML = diet2;
   document.getElementById("diet3").innerHTML = diet3;
+
+  //function to scroll to tips section after calculation
+   setTimeout(() => {
+  document.getElementById("tipsSection").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 300);
 }
+
+// Function to highlight active section in navigation
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a[href^='#']");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.clientHeight;
+
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+
+
+

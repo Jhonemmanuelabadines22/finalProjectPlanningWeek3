@@ -4,22 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="landingPageStyle.css" />
- 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- POPPINS FONT LINK-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>CarbonCheck - Carbon Footprint Calculator</title>
 
 </head>
 <body>
 
   <nav>
+    
     <a href="#home">Home</a>
-    <a href="calculatorPage.html">Calculator</a>
     <a href="#features">Features</a>
     <a href="#about">About</a>
+    <a href="#footer">Contact Us</a>
   </nav>
 
   <!-- HOME PAGE -->
   <section class="imgbg" id="home">
-    <h1 class="title">CarbonCheck</h1>
+    <h1 id="title" class="animate__animated animate__bounce">CarbonCheck</h1>
     <p class="tagline">Track your carbon footprint. Reduce your impact. Save the planet 🌱</p>
     <a href="calculatorPage.html"><button class="btnTrack">Track Now</button></a>
   </section> 
@@ -27,7 +36,7 @@
   <!-- Learn PAGE -->
 
   <section id="">
-    <div class="container">
+    <div class="container" data-aos="fade-right">
       <h2>What is a Carbon Footprint?</h2>
 
       <iframe width="760" height="415"
@@ -58,7 +67,7 @@
 
   <!-- FEATURES PAGE -->
   <section id="features">
-    <div class="container">
+    <div class="container"  data-aos="fade-left">
       <h2>Website Features</h2>
 
       <!-- FEATURE 2 -->
@@ -90,7 +99,7 @@
   </section>
 
   <section id="about">
-    <div class="container">
+    <div class="container"  data-aos="fade-right">
       <h1>🌍 CarbonCheck</h1>
       <p>
         CarbonCheck is a Carbon Footprint Calculator designed to help users understand
@@ -112,12 +121,38 @@
     </div>
   </section>
 
-  
-  <footer>
-    <p>CarbonCheck © 2026 | TEAMBA</p>
-  </footer>
 
-  
+<section id="footer">
+
+  <div class="containerNav">
+    <h2 id="footerNavHeader">Contact Us</h2>
+    <input type="text" data-aos="fade-up" placeholder="Enter your name" >
+    <input type="text" data-aos="fade-up" data-aos-duration="500" placeholder="Enter your email">
+    <textarea data-aos="fade-up" data-aos-duration="700" placeholder="Write your message here..."></textarea>
+    <button data-aos="fade-up" data-aos-duration="1000">Send</button>
+  </div>
+
+  <div class="containerTrackNow">
+    <h3>Reduce your impact!</h3>
+    <img src="/undraw_lost_teip.svg" alt="Illustration">
+    <a href="calculatorPage.html">
+      <button class="btnTrack"  data-aos="flip-up">Track Now!</button>
+    </a>
+  </div>
+
+  <div class="containerContact">
+    <p>© CarbonCheck 2026</p>
+  </div>
+
+</section>
+  <div id="bigText">
+    <h1>CarbonCheck</h1>
+  </div>
+
      <script src="function.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
 </body>
 </html>
